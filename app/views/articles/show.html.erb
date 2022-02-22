@@ -1,0 +1,7 @@
+<h1><%= @article.title %></h1>
+<i class="fas fa-pen"></i>
+<i class="fas fa-trash"></i>
+<%= link_to "Edit", edit_article_path %> |
+<%= link_to "Delete", article_path(@article), method: :delete, data: { confirm: "Are you sure?" } %>
+<hr>
+<p><%= @article.content %></p>
